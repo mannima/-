@@ -217,40 +217,5 @@
 </body>
 </html>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<!-- <script type="text/javascript" src="js/register.js"></script> -->
-<script type="text/javascript">
-$(function(){
-	$("#phoneId").blur(function(){
-		if($("#phoneId").val()==""){
-			alert("用户名输入不能为空");
-		}else{
-			$.get("checkuser.php",{"userphone":$("#phoneId").val()},function(data){
-	  			if (data==1) {
-	  				alert("亲，该手机号可以注册");
-	  			}else{
-	  				alert("亲，该手机号已被注册");
-	  			}  			
-			})
-		}
-	})
-});
-
-
-$(function(){
-	$("#pass").blur(function(){
-		if($("#pass").val()==""){
-			alert("密码不能为空");
-		}else{
-			$("#regBtn").click(function(){
-				$.post("regSave.php",{userpass:$("#pass").val(),userphone:$("#phoneId").val()},function(data){
-					if (data==1) {
-						location.href="http://127.0.0.1/damaiW/index.html";
-					}else{
-						alert("失败");
-					}
-				})
-			})
-		}
-	})
-});
-</script>
+<script type="text/javascript" src="js/register.js"></script>
+<script type="text/javascript" src="js/cookieTools.js"></script>
