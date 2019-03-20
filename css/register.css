@@ -1,0 +1,174 @@
+body,p,dl,dd,ul,ol,li,div,h1,h2,h3,h4,h5,h6,form,input,table,tr,td{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: "微软雅黑",Arial;
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border: 0;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border:0;
+}
+/*contentWrap*/
+.contentWrap{
+	width: 100%;
+	background: #f8f8f8;
+	padding-top: 40px;
+}
+.content{
+	width: 1200px;
+	margin:0 auto;
+	background: #fff;
+	padding-bottom: 110px;
+}
+.section{
+	width: 720px;
+	/*height: 358px;*/
+	/*background: skyblue;*/
+	margin:0 auto;
+	padding-top: 30px;
+}
+.sectionList{
+	overflow: hidden;
+	/*clear: both;*/
+	margin-bottom: 16px;
+	height: 66px;	
+	padding-left: 200px;
+}
+.sectionList_left{
+	float: left;
+	height: 40px;
+	padding-right: 12px;
+	text-align: right;
+	color: #fff;
+}
+.sectionList_left span{
+	float: left;
+}
+.sectionList_left span:nth-child(1){
+	color: #dd2727;
+	padding-top:10px;
+	padding-right: 5px;
+}
+.shouJiHaoMa{
+	font-size: 14px;
+	line-height: 40px;
+	text-align: right;
+	color: #666;
+}
+.sectionList_Right{
+	float: left;
+	height: 43px;
+	
+}
+.sectionList_RightOne{
+	border:1px solid #ccc;
+	box-sizing: border-box;
+}
+.dQ{
+	display: block;
+	float: left;
+	width: 145px;
+	height: 38px;
+	font-size: 14px;
+	line-height: 40px;
+	/*border: 1px solid #cccccc;*/
+	border-right: 0;
+}
+.dQ span,.dQ img,.inputBox{
+	display: block;
+	float: left;
+}
+.dQ img{
+	height: 100%;
+	padding-left: 10px;
+}
+.dQ span:nth-child(1){
+	padding-left: 8px;
+	padding-right: 16px;
+}
+.inputBox input{
+	width: 152px;
+	height: 41px;
+	border:0;	
+	float: left;
+}
+.sectionList_LE_Ri_box{
+	padding-left: 85px;
+	margin:0 auto;
+	overflow: hidden;
+	float: left;
+	padding-bottom: 4px;
+}
+.hint{
+	/*display: none;*/
+	font-size: 12px;
+	color: #dd2727;
+	width: 300px;
+	height: 15px;
+	z-index: 11;
+	padding-top: 4px;
+}
+#hintPhone{
+	padding-left: 81px;	
+	padding-top: 4px;
+}
+.hint2{
+	padding-left: 81px;
+}
+.passwordBox{
+	display: block;
+}
+.passwordBox input{
+	width: 300px;
+	height: 40px;
+	border:1px solid #cccccc;
+	padding:0 8px;
+	box-sizing: border-box;
+}
+.message{
+	width: 300px;
+	height: 36px;
+	line-height: 18px;
+	
+}
+.message span{
+	font-size: 14px;
+	color: #333;
+	line-height: 18px;
+}
+.message span a{
+	color: #0073bd;
+}
+.message input{
+	width: 16px;
+	height: 16px;
+	padding-right: 5px;
+}
+.hintfooter{
+	padding: 0;
+	padding-top: 10px;
+}
+.registerBtn{
+	line-height: 38px;
+	font-size: 16px;
+
+}
+.registerBtn input{
+	width: 150px;	
+	height: 38px;
+	border-radius: 3px;
+	background-color: #ff1268;
+	border: 1px solid #ff1268;
+	background-image: linear-gradient(90deg,#ff4aae,#ff1268);
+	cursor: pointer;
+	color: #fff;
+}

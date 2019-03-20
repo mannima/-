@@ -1,0 +1,244 @@
+@charset "utf-8";
+
+$fontSize:12px;
+$margin:0 auto;
+
+//header
+.headerWrap{
+	overflow:hidden;
+	height:35px;
+	background:#f7f7f7;
+	font-size:$fontSize;
+	border-bottom:1px solid #e5e5e5;
+	header{
+		width:1200px;
+		margin:$margin;
+		color:#666;
+		height:35px;
+		line-height:35px;
+		.uls{
+			float:left;
+			li{
+				background:url(../img/top-bg.png) no-repeat;
+				padding:0 11px 0 10px;
+				float:left;
+				position:relative;
+				height:35px;
+				z-index:1000;
+				.dm_t a{
+					color:#666;
+				}
+			}
+			.dm_info{
+				padding-left:0;
+				a :hover {
+					text-decoration:underline;
+				}
+				.dm_login{
+					color:#ed0a75;
+					padding:0 5px;
+				}
+				.dm_register{
+					color:#666;
+					padding-right:5px;
+				}
+			}
+			.my_dm{
+				:hover b{
+					-webkit-transtform:rotate(360deg);
+					background-position:0 -50px;
+				}
+				.dm_t{
+					
+					b{
+						width:7px;
+						height:7px;
+						overflow:hidden;
+						background:url(../img/top-bg.png) 0 -40px no-repeat;
+						position:absolute;
+						top:15px;
+						right:0;
+						-webkit-transition: all .3s ease-in;
+					}
+
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+.contentWrap{
+	background:#f3f5f6;
+	section{
+		width:1200px;
+		margin:$margin;
+		height:420px;
+		img{
+			width:100%;
+			height:100%;
+		}
+	}
+	.list{
+		width:1200px;
+		margin:$margin;
+		overflow:hidden;
+		padding-bottom:20px;
+		.shoping_box{
+			float:left;
+			width:185px;
+			height:359px;
+			background-color:#fff;
+			margin-right:18px;
+			margin-top:15px;
+			.box_head{
+				width:100%;
+				height:249px;
+				overflow:hidden;
+				position:relative;
+				.topCity{
+					width:100%;
+					height:28px;
+					position:relative;
+					left:0;
+					top:0;
+					text-overflow:ellipsis;
+					overflow:hidden;
+					white-space:nowrap;
+					.box-head-tag{
+						background:#453e3c;
+						padding:0 7px 0 5px;
+						max-width:45%;
+						display:inline-block;
+						font-size:12px;
+						color:#fff;
+						line-height:28px;
+						text-align:center;
+						text-overflow:ellipsis;
+						white-space:nowrap;
+					}
+				}
+			}
+			.box_bott{
+				width:165px;
+				height:90px;
+				position:relative;
+				padding:10px;
+				.boxTitle{
+					width:100%;
+					height:36px;
+					font-size:14px;
+					color:#333;
+					line-height:18px;
+					text-align:justify;
+					overflow:hidden;
+				}
+				.box_data{
+					width:100%;
+					height:11px;
+					line-height:11px;
+					font-size:10px;
+					color:#999;
+					text-overflow:ellipsis;
+					overflow:hidden;
+					white-space:nowrap;
+					margin-top:10px;
+				}
+				.box_money{
+					width:100%;
+					height:21px;
+					line-height:21px;
+					color:#999;
+					text-overflow:ellipsis;
+					overflow:hidden;
+					white-space:nowrap;
+					margin-top:10px;
+					position:relative;
+					.money_tip{
+						color:#666;
+						font-size:14px;
+						display:inline-block;
+						position:absolute;
+						left:0;
+						top:0;
+					}
+					.money_num{
+						color:#fa1268;
+						font-size:21px;
+						margin-left:16px;
+					}
+				}
+			}
+			img{
+				width:100%;
+				height:100%;
+				position:absolute;
+				left:0;
+				top:0;
+			}
+		}
+	}
+}
+
+//footerWrap
+.footerWrap{
+	border-top:1px solid #e5e5e5;
+	background:#fafafa;
+	footer{
+		width:1200px;
+		margin:$margin;
+		overflow:hidden;
+		padding-bottom:20px;
+		.dm_link{
+			text-align:center;
+			color:#d9d9d9;
+			line-height:42px;
+			border-bottom:1px solid #e5e5e5;
+			margin-bottom:15px;
+			a{
+				color:#666;
+				margin:0 10px;
+				font-size:12px;
+			}
+		}
+		.dm_link a:hover {
+			color:#fa1268;
+			text-decoration:underline;
+		}
+		.copyRight{
+			padding-bottom:15px;
+			text-align:center;
+			p{
+				font-size:12px;
+				text-align:center;
+				color:#666;
+				lien-height:20px;
+				a{
+					padding:0 10px;
+					color:#666;
+				}
+				span{
+					color:#d9d9d9;
+				}
+			}
+			.pp{
+				height:20px;
+			}
+			.pps{
+				line-height:23px;
+			}
+		}
+		.copyRight p a:hover{
+			color:#fa1268;
+		}
+		.copyRights{
+			a{
+				padding:0 10px;
+			}
+		}
+	}
+}

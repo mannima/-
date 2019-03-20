@@ -1,0 +1,187 @@
+.headerWrap {
+  overflow: hidden;
+  height: 35px;
+  background: #f7f7f7;
+  font-size: 12px;
+  border-bottom: 1px solid #e5e5e5; }
+  .headerWrap header {
+    width: 1200px;
+    margin: 0 auto;
+    color: #666;
+    height: 35px;
+    line-height: 35px; }
+    .headerWrap header .uls {
+      float: left; }
+      .headerWrap header .uls li {
+        background: url(../img/top-bg.png) no-repeat;
+        padding: 0 11px 0 10px;
+        float: left;
+        position: relative;
+        height: 35px;
+        z-index: 1000; }
+        .headerWrap header .uls li .dm_t a {
+          color: #666; }
+      .headerWrap header .uls .dm_info {
+        padding-left: 0; }
+        .headerWrap header .uls .dm_info a :hover {
+          text-decoration: underline; }
+        .headerWrap header .uls .dm_info .dm_login {
+          color: #ed0a75;
+          padding: 0 5px; }
+        .headerWrap header .uls .dm_info .dm_register {
+          color: #666;
+          padding-right: 5px; }
+      .headerWrap header .uls .my_dm :hover b {
+        -webkit-transtform: rotate(360deg);
+        background-position: 0 -50px; }
+      .headerWrap header .uls .my_dm .dm_t b {
+        width: 7px;
+        height: 7px;
+        overflow: hidden;
+        background: url(../img/top-bg.png) 0 -40px no-repeat;
+        position: absolute;
+        top: 15px;
+        right: 0;
+        -webkit-transition: all .3s ease-in; }
+
+.contentWrap {
+  background: #f3f5f6; }
+  .contentWrap section {
+    width: 1200px;
+    margin: 0 auto;
+    height: 420px; }
+    .contentWrap section img {
+      width: 100%;
+      height: 100%; }
+  .contentWrap .list {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 20px; }
+    .contentWrap .list .shoping_box {
+      float: left;
+      width: 185px;
+      height: 359px;
+      background-color: #fff;
+      margin-right: 18px;
+      margin-top: 15px; }
+      .contentWrap .list .shoping_box .box_head {
+        width: 100%;
+        height: 249px;
+        overflow: hidden;
+        position: relative; }
+        .contentWrap .list .shoping_box .box_head .topCity {
+          width: 100%;
+          height: 28px;
+          position: relative;
+          left: 0;
+          top: 0;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap; }
+          .contentWrap .list .shoping_box .box_head .topCity .box-head-tag {
+            background: #453e3c;
+            padding: 0 7px 0 5px;
+            max-width: 45%;
+            display: inline-block;
+            font-size: 12px;
+            color: #fff;
+            line-height: 28px;
+            text-align: center;
+            text-overflow: ellipsis;
+            white-space: nowrap; }
+      .contentWrap .list .shoping_box .box_bott {
+        width: 165px;
+        height: 90px;
+        position: relative;
+        padding: 10px; }
+        .contentWrap .list .shoping_box .box_bott .boxTitle {
+          width: 100%;
+          height: 36px;
+          font-size: 14px;
+          color: #333;
+          line-height: 18px;
+          text-align: justify;
+          overflow: hidden; }
+        .contentWrap .list .shoping_box .box_bott .box_data {
+          width: 100%;
+          height: 11px;
+          line-height: 11px;
+          font-size: 10px;
+          color: #999;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          margin-top: 10px; }
+        .contentWrap .list .shoping_box .box_bott .box_money {
+          width: 100%;
+          height: 21px;
+          line-height: 21px;
+          color: #999;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          margin-top: 10px;
+          position: relative; }
+          .contentWrap .list .shoping_box .box_bott .box_money .money_tip {
+            color: #666;
+            font-size: 14px;
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 0; }
+          .contentWrap .list .shoping_box .box_bott .box_money .money_num {
+            color: #fa1268;
+            font-size: 21px;
+            margin-left: 16px; }
+      .contentWrap .list .shoping_box img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0; }
+
+.footerWrap {
+  border-top: 1px solid #e5e5e5;
+  background: #fafafa; }
+  .footerWrap footer {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 20px; }
+    .footerWrap footer .dm_link {
+      text-align: center;
+      color: #d9d9d9;
+      line-height: 42px;
+      border-bottom: 1px solid #e5e5e5;
+      margin-bottom: 15px; }
+      .footerWrap footer .dm_link a {
+        color: #666;
+        margin: 0 10px;
+        font-size: 12px; }
+    .footerWrap footer .dm_link a:hover {
+      color: #fa1268;
+      text-decoration: underline; }
+    .footerWrap footer .copyRight {
+      padding-bottom: 15px;
+      text-align: center; }
+      .footerWrap footer .copyRight p {
+        font-size: 12px;
+        text-align: center;
+        color: #666;
+        lien-height: 20px; }
+        .footerWrap footer .copyRight p a {
+          padding: 0 10px;
+          color: #666; }
+        .footerWrap footer .copyRight p span {
+          color: #d9d9d9; }
+      .footerWrap footer .copyRight .pp {
+        height: 20px; }
+      .footerWrap footer .copyRight .pps {
+        line-height: 23px; }
+    .footerWrap footer .copyRight p a:hover {
+      color: #fa1268; }
+    .footerWrap footer .copyRights a {
+      padding: 0 10px; }
+
+/*# sourceMappingURL=project.css.map */

@@ -1,0 +1,51 @@
+body,p,dl,dd,ul,ol,li,div,h1,h2,h3,h4,h5,h6,form,input,table,tr,td{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: "微软雅黑",Arial;
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border: 0;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border:0;
+}
+/*headerWrap*/
+.headerWrap{
+	width: 100%;
+}
+header{
+	width: 1200px;
+	height: 90px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.headerLeft{
+	float: left;
+}
+.headerLeft img{
+	padding-top: 24px;
+	width: 108px;
+	height: 48px;
+}
+.headerRight{
+	float: right;
+}
+.headerRight a{
+	display: block;
+	width: 121px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	font-size: 14px;
+	color: #888;
+	border:1px solid #ebebeb;
+	margin-top: 24px;
+}

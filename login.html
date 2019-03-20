@@ -33,14 +33,15 @@
 					<form>
 						<div class="shuru">
 							<img src="img/ren.png">
-							<input class="inputs" type="text" placeholder="请输入手机号或邮箱"/>
+							<input id="userId" class="inputs" type="text" placeholder="请输入手机号或邮箱"/>
 						</div>
 						<div class="shuru">
 							<img src="img/pass.png">
-							<input class="inputss" type="password" placeholder="请输入登录密码"/>
+							<input id="userPas" class="inputss" type="password" placeholder="请输入登录密码" />
 						</div>
 						<div class="btnBox">
-							<button>登录</button>
+							<!-- <button id="">登录</button> -->
+							<input id="btnId" type="button" value="登录">
 						</div>
 						<div class="dsfLogin">
 							<a href="#"><img src="img/wx.png"></a>
@@ -73,7 +74,7 @@
 							<a href="#" class="yzm">获取验证码</a>
 						</div>
 						<div class="btnBox">
-							<button>登录</button>
+							<input class="inputssssss" type="button" value="登录">
 						</div>
 					</form>
 				</div>
@@ -197,4 +198,109 @@
 </body>
 </html>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript" src="js/cookieTools.js?P=1"></script>
+<!-- <script type="text/javascript" src="js/1.js"></script> -->
+<script type="text/javascript">
+$(function(){
+	//鼠标滑过input框，给input框添加粉色border
+	$(".inputs").mouseenter(function(){
+		$(".inputs").css({"border-color":"#ff1268"})
+	})
+	$(".inputs").mouseleave(function(){
+		$(".inputs").css({"border-color":"#e7e7e7"})
+	})
+	$(".inputss").mouseenter(function(){
+		$(".inputss	").css({"border-color":"#ff1268"})
+	})
+	$(".inputss").mouseleave(function(){
+		$(".inputss").css({"border-color":"#e7e7e7"})
+	})
+
+
+	//三种登录方式
+	$("#dxdl").click(function(){
+		$("#dxdl").css({"color":"#ff1268","background":"#fff","border-top":"2px solid #ff1268"})
+		$("#mmdl").css({"color":"#222","background":"#e7e7e7","border-top-color":"#e7e7e7"});
+		$("#smdl").css({"color":"#222","background":"#e7e7e7","border-top-color":"#e7e7e7"});
+		$(".loginCon2").css({"display":"block"});
+		$(".loginCon11").css({"display":"none"});
+		$(".loginCon3").css({"display":"none"});
+	})
+
+	$("#mmdl").click(function(){
+		$("#mmdl").css({"color":"#ff1268","background":"#fff","border-top":"2px solid #ff1268"})
+		$("#dxdl").css({"color":"#222","background":"#e7e7e7","border-top-color":"#e7e7e7"});
+		$(".loginCon11").css({"display":"block"});
+		$(".loginCon2").css({"display":"none"});
+		$(".loginCon3").css({"display":"none"});
+	})
+	$("#smdl").click(function(){
+		$("#smdl").css({"color":"#ff1268","background":"#fff","border-top":"2px solid #ff1268"})
+		$("#dxdl").css({"color":"#222","background":"#e7e7e7","border-top-color":"#e7e7e7"});
+		$("#mmdl").css({"color":"#222","background":"#e7e7e7","border-top-color":"#e7e7e7"});
+		$(".loginCon3").css({"display":"block"});
+		$(".loginCon11").css({"display":"none"});
+		$(".loginCon2").css({"display":"none"});
+	})
+});
+
+
+$(function(){
+	$("#btnId").click(function(){
+		$.post("loginCheck.php",{userphone:$("#userId").val(),userpass:$("#userPas").val()},function(data){
+			if(data==0){
+				let str = $("#userId").val();
+				addCookie("user",str,7);
+				window.localStorage.userphone=$("#userId").val();
+ 				console.log(str);
+				location.href = "index.html";
+			}else{ 
+				alert("登录失败。用户名或密码错误");
+			}
+		})
+	})
+})
+
+
+
+
+// $(function(){
+// 	$(".bgs").on("click",function(){
+// 		$.post("loginCheck.php",{userphone:$("#name").val(),userpass:$("#pass").val()},function(data){
+// 			if (data==0) {
+// 				location.href="netShop.html";
+// 			}else{
+// 				alert("登录失败");
+// 			}
+// 		})
+// 	})
+// })
+
+
+
+// $(function(){
+// 	$("#btnBox").click(function(){
+// 		console.log($("#userId").val());
+// 		$.post("php/loginCheck.php",{
+// 			userphone:$("#userId").val(),
+// 			userpass:$("#userPas").val()},
+// 			function(data){
+// 				if(data==0){
+// 					alert(data);
+// 					// let user = getCookie("user");
+// 					// let userphone = (user.substring(0,11));
+// 					// let userpass = (user.substring(11));
+// 					location.href = "index.html";
+// 			}else{
+// 				alert("登陆失败，用户名或密码错误");
+// 			}
+// 		});
+// 	});
+// });
+
+
+
+
+
+
+</script>

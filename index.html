@@ -18,20 +18,29 @@
 			</div>
 			<div class="recommend_header">
 				<a href="#" class="pink">首页</a>
-				<a href="#" class="black">分类</a>
+				<a href="goodslist.html" class="black">分类</a>
 			</div>
 			<div class="right_header">
 				<div class="box_header">
 					<div class="box_headerWrap">
-						<a href="#" class="hoverBox">
+						<a href="login.html" class="hoverBox">
 							<img src="img/heade.png">
-							<span>登录</span>
+							<span id="showId">登录</span>
 						</a>
-						<div class="loginHoverBox">
+						<div class="loginHoverBox bb">
 							<div class="loginHover">
 								<a href="#">个人信息</a>
 								<a href="#">账号设置</a>
 								<a href="#">订单管理</a>
+							</div>
+							<span class="hoverSpan"></span>
+						</div>
+						<div class="loginHoverBox aa" style="display: none">
+							<div class="loginHover">
+								<a href="#">个人信息</a>
+								<a href="#">账号设置</a>
+								<a href="#">订单管理</a>
+								<a class="tcdl" href="#">退出登陆</a>
 							</div>
 							<span class="hoverSpan"></span>
 						</div>
@@ -545,6 +554,7 @@
 
 <script type="text/javascript" src="js/swiper.min.js"></script>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/cookieTools.js"></script>
 <script type="text/javascript">
 window.onload=  function(){
 	var mySwiper = new Swiper ('.swiper-container', {
@@ -575,7 +585,19 @@ window.onload=  function(){
  
 
 }
-
+// function showList(objs){
+//     let htmlStr="";
+//     for(let i in objs){
+//         htmlStr+=`<div class="loginHover">
+// 					<a href="#">个人信息</a>
+// 					<a href="#">账号设置</a>
+// 					<a href="#">订单管理</a>
+// 					<a href="#">退出登陆</a>
+// 				  </div>`;
+// 					console.log(objs);
+//     }
+//     $(".loginHoverBox").html(htmlStr);
+// }  
  $(function(){
   		$("#searchInput").click(function(){
   			$("#searchInput").css({"border":"1px solid #ff1268"});
@@ -585,5 +607,23 @@ window.onload=  function(){
   		})
   }); 
 
+
+	if(localStorage.userphone){
+		 $("#showId").html(localStorage.userphone); 
+		$(".box_headerWrap").mouseover(function(){
+			$(".aa").css({"display":"block"});
+			$(".bb").css({"display":"noen"});
+		})
+		$(".box_headerWrap").mouseout(function(){
+			$(".aa").css({"display":"none"});
+		})
+
+		
+	}
+	$(".tcdl").click(function(){
+			addCookie("userphone",$("#showId").html(),-1);
+        	localStorage.removeItem("userphone");
+        	location.reload();
+	})
 
 </script>
